@@ -1,0 +1,213 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-text-color: #000000;
+  --primari-bg-color: #ffffff;
+  --primari-hero-color: #2f303a;
+  --section-team-button: #f5f4fa;
+}
+body {
+  background-color: var(--primari-bg-color);
+  color: var(--title-text-color);
+  font-family: roboto, sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.header {
+  background-color: var(--primari-bg-color);
+}
+/* логотип*/
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-header {
+  color: var(--button-text-color);
+}
+
+/* шапка ссылки */
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link.current {
+  color: var(--accent-color);
+}
+/* адрес телефон шапка */
+.contakts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contakts-item:hover,
+.contakts-item:focus {
+  color: var(--accent-color);
+}
+
+/* герой */
+.hero {
+  background-color: var(--primari-hero-color);
+}
+
+.hero-title {
+  color: var(--primari-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* кнопка героя */
+.hero-title-button {
+  background: var(--accent-color);
+  cursor: pointer;
+  color: var(--primari-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* особенности */
+
+.feutures-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feutures-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* чем занимаемся */
+.heading {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* наша команда */
+.section-team {
+  background-color: var(--section-team-button);
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* подвал */
+.footer {
+  background-color: var(--primari-hero-color);
+}
+
+.address {
+  text-decoration: none;
+  font-style: normal;
+}
+.logo-footer {
+  color: var(--primari-bg-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.address-link {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* кнопки портфолио */
+.filter-button {
+  background: var(--section-team-button);
+  cursor: pointer;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primari-bg-color);
+}
+/* ссылки портфолио */
+.project-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* основной цвет background: #212121; */
+/* вторичный #757575; */
+/* акцент #2196F3 */
+/* белый color #FFFFFF */ ;
