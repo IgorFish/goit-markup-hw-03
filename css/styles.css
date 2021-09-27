@@ -32,7 +32,7 @@ img {
 .link {
   text-decoration: none;
 }
-.list {
+ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -42,31 +42,28 @@ img {
   margin: 0px auto;
   padding: 0px 15px;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
   background-color: var(--primari-bg-color);
-
-  /* outline: auto; */
-}
-.header-navigation {
-  width: 294px;
-  margin-right: 331px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .header-list {
   display: flex;
-  width: 294px;
-  padding: 32px 0px 32px 0px;
-  /* padding: 32px 0 32 0px; */
 }
 .header-item {
   margin-right: 50px;
@@ -81,26 +78,18 @@ img {
   flex-direction: row;
 }
 .contacs {
+  margin-left: auto;
   display: flex;
   padding: 32px 0px 32px 0px;
 }
+
 .contakts-item-mail {
-  width: 135px;
   margin-right: 50px;
 }
-/* .contakts-item-tel {
-} */
-
-/* .contakts-item {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-} */
 
 /* логотип*/
 
 .logo-link {
-  width: 145px;
   padding: 24px 0px 25px 0px;
   margin-right: 93px;
   color: var(--accent-color);
@@ -111,7 +100,7 @@ img {
   letter-spacing: 0.03em;
 }
 .logo-link-footer {
-  width: 145px;
+  display: block;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -121,7 +110,6 @@ img {
   margin-bottom: 20px;
 }
 .logo-header {
-  margin-right: 93px;
   color: var(--button-text-color);
 }
 
@@ -133,6 +121,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0px 32px 0px;
+
   color: var(--title-text-color);
 
   /* outline: auto; */
@@ -171,7 +161,6 @@ img {
   padding-bottom: 280px;
   text-align: center;
   background-color: var(--primari-hero-color);
-  margin-bottom: 94px;
 
   /* outline: 1px solid #f70404; */
 }
@@ -206,7 +195,8 @@ img {
 }
 /* особенности */
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .feutures-title {
   color: var(--title-text-color);
@@ -229,7 +219,6 @@ img {
   display: flex;
   padding-left: 0px;
   margin-top: 0px;
-  margin-bottom: 94px;
 
   /* outline: 1px solid #f70404; */
 }
@@ -243,7 +232,7 @@ img {
 /* чем занимаемся */
 
 .work {
-  margin-bottom: 94px;
+  padding-top: 0px;
 }
 .heading {
   color: var(--title-text-color);
@@ -257,7 +246,6 @@ img {
 
 .work-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .work-item:not(:last-child) {
@@ -266,7 +254,6 @@ img {
 /* наша команда */
 .section-team {
   background-color: var(--section-team-button);
-  margin-bottom: 0px;
 }
 
 .heading-team {
@@ -276,14 +263,14 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
+
   margin-bottom: 50px;
 }
-
+.section-team {
+  padding-top: 0px;
+}
 .team-list {
   display: flex;
-  padding-bottom: 94px;
-  margin-bottom: 0px;
 }
 .team-item-img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -297,6 +284,7 @@ img {
 .tiam-section {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primari-bg-color);
 }
 
 .team-title {
@@ -320,18 +308,18 @@ img {
 /* подвал */
 .footer {
   padding-top: 60px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
   background-color: var(--primari-hero-color);
 }
 .foot {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .address {
-  display: block;
-  width: 231px;
-  text-decoration: none;
+  /* display: block;
+  width: 231px; */
+  /* text-decoration: none; */
   font-style: normal;
 }
 .logo-footer {
@@ -363,17 +351,17 @@ img {
   letter-spacing: 0.03em;
 }
 /* секция портфолио */
-.section-portfolio {
+/* .section-portfolio {
   margin-top: 98px;
-}
+} */
 
 /* кнопки портфолио */
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
-.filter-item {
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -412,7 +400,6 @@ img {
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .project-item {
   margin-right: 30px;
@@ -423,12 +410,17 @@ img {
   margin-right: 0px;
   margin-bottom: 30px;
 }
-.project-link > img {
-  margin-bottom: 20px;
+.project-item:nth-child(n + 7) {
+  margin-bottom: 0px;
 }
+/* .project-link > img {
+  margin-bottom: 20px;
+} */
 
 .porjekt-section {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding: 20px 24px;
+  border-top: 0px;
   border: 1px solid #eeeeee;
 }
 
